@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUILDER.CSS</title>
+    <link rel="shortcut icon" href="hash.svg" type="image/svg">
+    <link rel="stylesheet" href="main.css">
+    <meta content="Builders.css" property="og:title" />
+    <meta content="Builders.css is a DOS themed CSS library." property="og:description" />
+    <meta content="https://metehantufek.github.io/builder.css/" property="og:url" />
+    <meta content="https://metehantufek.github.io/builder.css/logo.svg" property="og:image" />
+    <meta content="#13A10E" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        #logo {
+            margin-top: calc(16px * 1);
+            display: flex;
+            justify-content: center;
+            user-select: none;
+        }
+        #tag {
+            color: var(--white);
+            background-color: var(--blue);
+            margin: 0px;
+            white-space: pre;
+        }
+        #navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: var(--blue);
+            background-image: url(bg/dash.svg);
+            background-size: 9px;
+            background-repeat: repeat;
+            
+        }
+        #navbar > span:hover .dropdown {
+            display: block;
+        }
+        #navbar > a, #navbar > span {
+            color: var(--bwhite);
+            background-color: var(--blue);
+            white-space: pre;
+        }
+        #navbar > a::after, #navbar > span::after {
+            content: " ";
+        }
+        #navbar > a::before, #navbar > span::before {
+            content: " ";
+        }
+        #navbar > a:hover::after, #navbar > span:hover::after {
+            content: "←";
+        }
+        #navbar > a:hover::before, #navbar > span:hover::before {
+            content: "→";
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            color: var(--black);
+            background-color: var(--white);
+            white-space: normal;
+            min-width: 162px;
+            padding: 16px 9px;
+            z-index: 1;
+            box-shadow: 9px 16px var(--bblack);
+        }
+        .dropdown a {
+            color: var(--black);
+            background-color: var(--white);
+            user-select: none;
+        }
+        .dropdown a::before {
+            content: "• ";
+        }
+        .dropdown a:hover::before {
+            content: "→ ";
+        }
+        .dropdown a:hover {
+            color: var(--white);
+            background-color: var(--black);
+        }
+    </style>
+</head>
+<body>
+    <p id="tag">☺ BUILDER.CSS VER:0.01 ☻</p>
+    <div id="logo">
+        <p style="white-space: pre;">███   █   █  █  █     ███   ████  ████      ████  ████  ████
+█  █  █   █  █  █     █  █  █     █  █      █     █     █   
+███   █   █  █  █     █  █  ████  ███       █      ██    ██ 
+█  █  █   █  █  █     █  █  █     █  █      █        █     █
+███    ███   █  ████  ███   ████  █  █  ██  ████  ████  ████
+                </p>
+    </div>
+    <div id="navbar">
+        <a href="#about">About</a>
+        <a href="#components">Components</a>
+        <span>Tools<div class="dropdown">
+            <span style="color: var(--red);">!!! Coming Soon !!!</span><br>
+            <a href="">Box Generator</a><br>
+            <a href="">Painter</a><br>
+            <a href="">Color Picker</a>
+        </div></span>
+        <a href="#credits">Credits</a>
+    </div>
+    <h5 id="about">What is Builder.css?</h5>
+    <p style="white-space: normal;">
+        Builder.css is a CSS library made for websites that want to replicate an old DOS style. It relies heavily on the concept of semantic HTML.<br>
+        Although the library on its own doesn't use any JavaScript code at all, being made only from HTML & CSS, there are small JavaScript modules present within this site that can enhance the aesthetic and feeling of the DOS style.<br>
+        Builder.css is compatible with most monospace fonts.
+    </p>
+
+    <hr>
+
+    <h5 id="components">Components</h5>
+    <h6>Code/Pre Block</h6>
+    <p>
+        Code blocks are used to designate code.
+        <pre>&lt;p&gt;<br>  Code blocks are used to designate code.<br>     &lt;pre&gt;<br>         Code blocks are used to designate code.<br>     &lt;/pre&gt;<br>&lt;/p&gt;</pre>
+    </p>
+    <h6>Quote Block</h6>
+    <p>
+        Quote blocks are sections that quote other sources.
+        <blockquote>
+            The &lt;blockquote&gt; HTML element indicates that the enclosed text is an extended quotation. 
+        </blockquote>
+    </p>
+    <h6>Collapsible</h6>
+    <p>
+        Collapsibles are sections that minimize the information presented in order to provide a cleaner view.
+        <details>
+            This information is hidden.                
+            <summary>
+                Aha!
+            </summary>
+        </details>
+    </p>
+    <h6>Input forms</h6>
+    <p style="display: flex; align-items: center;">
+        <label for="button">Button Input:&nbsp;</label>
+        <input type="button" name="button" value="Button"><br>
+    </p>
+    <p style="display: flex; align-items: center;">
+        <label for="color">Color Input:&nbsp;</label>
+        <input type="color" name="color" id="color" value="#767676">
+    </p>
+    <p style="display: flex; align-items: center;">
+        <label for="text">Text Input:&nbsp;</label>
+        <input type="text" name="text" value="Text Input" spellcheck="false"><br>
+    </p>
+    <p style="display: flex; align-items: center; user-select: none;">
+        <label for="radio">Radio Input:&nbsp;</label>
+        <input type="radio" name="radio" value="radio" spellcheck="false">&nbsp;
+        <input type="radio" name="radio" value="radio" spellcheck="false">&nbsp;
+        <input type="radio" name="radio" value="radio" spellcheck="false">&nbsp;
+    </p>
+    <p style="display: flex; align-items: center; user-select: none;">
+        <label for="checkbox">Checkbox Input:&nbsp;</label>
+        <input type="checkbox" value="checkbox" spellcheck="false">&nbsp;
+        <input type="checkbox" value="checkbox" spellcheck="false">&nbsp;
+        <input type="checkbox" value="checkbox" spellcheck="false">&nbsp;
+    </p>
+    <p style="display: flex; align-items: center; user-select: none;">
+        <label for="range">Slider Input:&nbsp;</label>
+        <input type="range" name="range" min="0" max="11" value="5" style="width: calc(9px * 13);">
+    </p>
+    <hr id="credits">
+    <br>
+    <p style="text-align: center; margin: 0px; background-color: var(--black); color: var(--blue);">Builder.css is licensed under the <a href="https://github.com/metehantufek/builder.css/blob/main/LICENSE">MIT License</a>. <br>Made by <a href="https://github.com/metehantufek">Metehan Tüfek</a>.<br><br><span class="c4 b0">☺</span></p>
+    <script>
+        function omarq(marquee, str, interval = 250) { // terminal style marquee text
+            index = 0;
+            if (marquee.parentNode != document.body) {
+                function calcWinLen() {
+                    return Math.floor(marquee.parentNode.style.width.replace("px", "") / 9);
+                }
+            }
+            else {
+                function calcWinLen() {
+                    return Math.floor(window.innerWidth / 9) - 2;
+                }
+            }
+            setInterval(function() {
+            mstr = " ".repeat(calcWinLen()).split("");
+            for (var i = 0; i < str.length; i++) {
+                mstr[(i + index) % calcWinLen()] = str[i];
+            }
+            marquee.innerText = mstr.join("");
+            index += 1;
+            index = index % calcWinLen();
+            }, interval);
+        }
+        omarq(document.getElementById("tag"), document.getElementById("tag").innerText);
+    </script>
+</body>
+</html>

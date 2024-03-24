@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1'
+       height='48px' width='135px'>
+    <text x='0' y='12' fill='black' font-size='16px' style='font-family:"WebPlus IBM VGA 9x16"'>
+┌─┐ ╔═╗ ╒═╕ ╓─╖
+ </text>
+     <text x='0' y='27' fill='black' font-size='16px' style='font-family:"WebPlus IBM VGA 9x16"'>
+│ │ ║ ║ │ │ ║ ║
+ </text>
+     <text x='0' y='43' fill='black' font-size='16px' style='font-family:"WebPlus IBM VGA 9x16"'>
+└─┘ ╚═╝ ╘═╛ ╙─╜
+    </text>
+    
+    <defs>
+
+</defs>
+</svg>

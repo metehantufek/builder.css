@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1'
+       height='16px' width='9px'>
+    <text x='0' y='12' fill='white' font-size='16px' style='font-family:"Web IBM VGA 9x16"'>-</text>
+    <defs>
+  <style type="text/css">
+    @font-face {
+        font-family: 'Web IBM VGA 9x16';
+        font-style: normal;
+        font-weight: 400;
+        src: url(web_ibm_vga_9x16.woff) format('woff');
+    }
+  </style>
+</defs>
+</svg>
